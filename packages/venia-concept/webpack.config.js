@@ -176,6 +176,7 @@ module.exports = async function(env) {
             new WebpackAssetsManifest({
                 output: 'asset-manifest.json',
                 entrypoints: true,
+                publicPath: '/',
                 // Add explicit properties to the asset manifest for
                 // venia-upward.yml to use when evaluating app shell templates.
                 transform(assets) {
