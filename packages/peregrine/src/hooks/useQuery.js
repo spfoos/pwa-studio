@@ -22,7 +22,7 @@ export const useQuery = query => {
             }
             receiveResponse(payload);
         },
-        [query, receiveResponse]
+        [apolloClient, query, receiveResponse]
     );
 
     // this object should never change
