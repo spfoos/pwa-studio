@@ -5,10 +5,10 @@ import { usePagination, useQuery } from '@magento/peregrine';
 import { toggleDrawer } from 'src/actions/app';
 import catalogActions from 'src/actions/catalog';
 import { mergeClasses } from 'src/classify';
-import { loadingIndicator } from 'src/components/LoadingIndicator';
+
+import { fullPageLoadingIndicator } from 'src/components/LoadingIndicator';
 import { connect, withRouter } from 'src/drivers';
 import { compose } from 'redux';
-
 import categoryQuery from 'src/queries/getCategory.graphql';
 import isObjectEmpty from 'src/util/isObjectEmpty';
 import { getFilterParams } from 'src/util/getFilterParamsFromUrl';
@@ -101,7 +101,7 @@ const Category = props => {
 
     // show loading indicator until data has been fetched
     // and pagination state has been updated
-    if (!totalPages) return loadingIndicator;
+    if (!totalPages) return fullPageLoadingIndicator;
 
     return (
         <CategoryContent
