@@ -3,19 +3,19 @@ import { bool, func, shape, string } from 'prop-types';
 import MenuIcon from 'react-feather/dist/icons/menu';
 import SearchIcon from 'react-feather/dist/icons/search';
 
-import Icon from 'src/components/Icon';
-import Logo from 'src/components/Logo';
-import { Link, resourceUrl, Route } from 'src/drivers';
+import Icon from '../Icon';
+import Logo from '../Logo';
+import { Link, resourceUrl, Route } from '@magento/venia-drivers';
 
 import CartTrigger from './cartTrigger';
 import NavTrigger from './navTrigger';
 import SearchTrigger from './searchTrigger';
-import OnlineIndicator from 'src/components/OnlineIndicator';
+import OnlineIndicator from '../OnlineIndicator';
 
-import { mergeClasses } from 'src/classify';
+import { mergeClasses } from '../../classify';
 import defaultClasses from './header.css';
 
-const SearchBar = React.lazy(() => import('src/components/SearchBar'));
+const SearchBar = React.lazy(() => import('../SearchBar'));
 
 const Header = props => {
     const { hasBeenOffline, isOnline, searchOpen, toggleSearch } = props;

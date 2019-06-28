@@ -15,7 +15,7 @@ import { bool, func, shape, string } from 'prop-types';
 import { Util } from '@magento/peregrine';
 
 import defaultClasses from './braintreeDropin.css';
-import { mergeClasses } from 'src/classify';
+import { mergeClasses } from '../../classify';
 import dropIn from 'braintree-web-drop-in';
 
 const { BrowserPersistence } = Util;

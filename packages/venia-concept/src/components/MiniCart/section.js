@@ -4,8 +4,8 @@ import HeartIcon from 'react-feather/dist/icons/heart';
 import Edit2Icon from 'react-feather/dist/icons/edit-2';
 import TrashIcon from 'react-feather/dist/icons/trash';
 
-import { mergeClasses } from 'src/classify';
-import Icon from 'src/components/Icon';
+import { mergeClasses } from '../../classify';
+import Icon from '../Icon';
 
 import defaultClasses from './section.css';
 

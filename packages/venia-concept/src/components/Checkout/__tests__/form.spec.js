@@ -6,9 +6,9 @@ import AddressForm from '../addressForm';
 import PaymentsForm from '../paymentsForm';
 import ShippingForm from '../shippingForm';
 import Section from '../section';
-import Button from 'src/components/Button';
+import Button from '../../Button';
 
-jest.mock('src/classify');
+jest.mock('../../../classify');
 
 const mockCancelCheckout = jest.fn();
 const mockEditOrder = jest.fn();

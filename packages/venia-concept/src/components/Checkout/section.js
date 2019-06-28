@@ -2,8 +2,8 @@ import React from 'react';
 import { bool, node, shape, string } from 'prop-types';
 import EditIcon from 'react-feather/dist/icons/edit-2';
 
-import { mergeClasses } from 'src/classify';
-import Icon from 'src/components/Icon';
+import { mergeClasses } from '../../classify';
+import Icon from '../Icon';
 import defaultClasses from './section.css';
 
 const editIconAttrs = {

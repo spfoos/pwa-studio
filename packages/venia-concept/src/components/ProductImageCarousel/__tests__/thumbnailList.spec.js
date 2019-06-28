@@ -5,7 +5,7 @@ import {
     WindowSizeContextProvider,
     createTestInstance
 } from '@magento/peregrine';
-jest.mock('src/classify');
+jest.mock('../../../classify');
 
 const updateActiveItemIndexMock = jest.fn();
 const defaultProps = {

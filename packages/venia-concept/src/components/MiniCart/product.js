@@ -2,8 +2,8 @@ import React, { useCallback, useMemo, useState } from 'react';
 import { array, func, number, shape, string } from 'prop-types';
 import { Price } from '@magento/peregrine';
 
-import { mergeClasses } from 'src/classify';
-import { resourceUrl } from 'src/drivers';
+import { mergeClasses } from '../../classify';
+import { resourceUrl } from '@magento/venia-drivers';
 
 import Kebab from './kebab';
 import ProductOptions from './productOptions';

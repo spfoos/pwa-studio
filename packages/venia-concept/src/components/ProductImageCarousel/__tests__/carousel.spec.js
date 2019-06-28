@@ -1,12 +1,12 @@
 import React from 'react';
-import { transparentPlaceholder } from 'src/shared/images';
+import { transparentPlaceholder } from '../../../shared/images';
 import Carousel from '../carousel';
 import {
     WindowSizeContextProvider,
     createTestInstance
 } from '@magento/peregrine';
 
-jest.mock('src/classify');
+jest.mock('../../../classify');
 
 const defaultProps = {
     // This order is specifically set to test sorting/filtering. Do not modify.

@@ -6,7 +6,7 @@ import { navButtons } from '../constants';
 import NavButton from '../navButton';
 import Pagination from '../pagination';
 
-jest.mock('src/classify');
+jest.mock('../../../classify');
 jest.mock('../navButton');
 
 const setPage = jest.fn();

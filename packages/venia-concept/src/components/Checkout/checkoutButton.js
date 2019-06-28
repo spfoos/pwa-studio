@@ -1,8 +1,8 @@
 import React from 'react';
 import { bool, func } from 'prop-types';
 
-import Button from 'src/components/Button';
-import Icon from 'src/components/Icon';
+import Button from '../Button';
+import Icon from '../Icon';
 import LockIcon from 'react-feather/dist/icons/lock';
 
 const CheckoutButton = ({ disabled, onClick }) => {
