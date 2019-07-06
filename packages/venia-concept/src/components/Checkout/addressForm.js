@@ -8,8 +8,6 @@ import defaultClasses from './addressForm.css';
 import {
     validateEmail,
     isRequired,
-    hasLengthExactly,
-    validateRegionCode
 } from 'src/util/formValidators';
 import combine from 'src/util/combineValidators';
 import TextInput from 'src/components/TextInput';
@@ -29,7 +27,6 @@ const fields = [
 const AddressForm = props => {
     const {
         cancel,
-        countries,
         isAddressInvalid,
         invalidAddressMessage,
         initialValues,
@@ -114,11 +111,6 @@ const AddressForm = props => {
                         <TextInput
                             id={classes.region_code}
                             field="region_code"
-                            validate={combine([
-                                isRequired,
-                                [hasLengthExactly, 2],
-                                [validateRegionCode, countries]
-                            ])}
                         />
                     </Field>
                 </div>
